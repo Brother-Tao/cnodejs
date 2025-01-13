@@ -47,10 +47,5 @@ export const HomeStyled = styled.div`
         margin: 10px 0 0 10px;
       }
     }
-    .sidebar {
-      width: 290px;
-      height: 100%;
-      background-color: #b2b2b2;
-    }
   }
 `

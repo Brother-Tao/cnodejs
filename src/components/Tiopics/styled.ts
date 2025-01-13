@@ -21,6 +21,12 @@ export const TiopicsStyled = styled.div`
       color: #9e78c0;
     }
   }
+  .title {
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid #e3e3e3;
+    }
+  }
   .time {
     position: absolute;
     right: 15px;

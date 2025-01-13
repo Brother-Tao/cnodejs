@@ -4,6 +4,7 @@ import { topNavs } from './config'
 import type { ITopNav, ITopics } from './config'
 import request from '@/server/request'
 import Tiopics from '@/components/Tiopics/Tiopics'
+import Sidebar from '@/components/Sidebar/Sidebar'
 
 const getTopics = async (tab: string = '', page: number = 1) => {
   return request.get('/topics', { params: { page: page, tab, limit: 50 } })
@@ -70,7 +71,7 @@ function Home() {
             )}
           </div>
         </div>
-        <div className="sidebar">sidebar</div>
+        <Sidebar />
       </div>
     </HomeStyled>
   )

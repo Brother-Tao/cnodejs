@@ -35,7 +35,7 @@ const Tiopics: FC<Iprops> = ({
         <span>/</span>
         <span title="点击数">{visitCount}</span>
       </div>
-      <span>{title}</span>
+      <span className='title'>{title}</span>
       <span className="time">{formatTimer(lastReplyAt)}</span>
     </TiopicsStyled>
   )
